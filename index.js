@@ -6,8 +6,8 @@ const mongoose = require("mongoose");
 // connection
 main().catch((err) => console.log(err));
 
-async function main() {
-  await mongoose.connect("mongodb+srv://CooderDost_Rajan:uA37ID6S3leFXcZR@cluster0.vetrvjo.mongodb.net/");  // mongodb://127.0.0.1:27017/test
+async function main() {                    // // Add your database name   .... like /test
+  await mongoose.connect("mongodb+srv://CooderDost_Rajan:uA37ID6S3leFXcZR@cluster0.vetrvjo.mongodb.net/test");  // mongodb://127.0.0.1:27017/test
   console.log("db connected");           
 }
 
